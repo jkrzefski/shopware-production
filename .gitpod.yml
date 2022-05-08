@@ -1,0 +1,16 @@
+image:
+  file: .gitpod/Dockerfile
+
+tasks:
+  - before: make -f .gitpod.mk prebuild
+  - command: make -f .gitpod.mk init
+
+ports:
+  - port: 8000
+    visibility: public
+
+vscode:
+  extensions:
+    - cweijan.vscode-database-client2
+    - felixfbecker.php-debug
+    - bmewburn.vscode-intelephense-client

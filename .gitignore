@@ -41,6 +41,7 @@ custom/*
 /repos/
 
 .env
+install.lock
 
 .cache/
 

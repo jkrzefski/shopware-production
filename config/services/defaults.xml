@@ -37,5 +37,9 @@
             <argument>%env(SHOPWARE_ES_HOSTS)%</argument>
             <argument>%env(SHOPWARE_ES_INDEX_PREFIX)%</argument>
         </service>
+
+        <service id="Shopware\Production\Command\GitpodUrlPortCommand">
+            <tag name="console.command"/>
+        </service>
     </services>
 </container>
